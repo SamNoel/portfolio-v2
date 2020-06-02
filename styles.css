@@ -1,0 +1,32 @@
+/* FONTS
+https://fonts.google.com/specimen/Barlow */
+@font-face {
+  font-family: "Barlow";
+  src: url("fonts/Barlow-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("fonts/Barlow-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("fonts/Barlow-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
