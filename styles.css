@@ -1,3 +1,16 @@
+/* COLORS
+#F6F6F6 - Almost-white: intro font color
+#9B9B9B - Gray: info-section font color
+ */
+
+ /* FONT SIZES
+1.375rem - 22px
+1.5rem - 24px
+2.5rem - 40px
+3.75rem - 60px
+5rem - 80px
+  */
+
 /* FONTS
 https://fonts.google.com/specimen/Barlow */
 @font-face {
@@ -21,6 +34,7 @@ https://fonts.google.com/specimen/Barlow */
   font-weight: 600;
 }
 
+/* GENERIC STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -29,4 +43,95 @@ https://fonts.google.com/specimen/Barlow */
 
 body {
   font-family: "Barlow", sans-serif;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 1.5rem; /* 24px */
+}
+
+p, li > a {
+  font-size: 1.375rem; /* 22px */
+}
+/* -------------------------------- */
+
+.intro-section,
+.info-section {
+  padding: 150px 70px 150px 70px;
+}
+
+.intro-section {
+  color: #F6F6F6;
+  background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background-photo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-header h1 {
+  font-size: 5rem; /* 80px */
+}
+
+/* MAIN NAV STYLES */
+.main-nav {
+  padding-top: 50px;
+}
+
+.main-nav ul {
+  width: 200px;
+}
+
+.main-nav ul li {
+  padding: 20px 0;
+}
+/* ------------------ */
+
+/* BOTTOM BORDER EFFECT ON NAV */
+.main-nav ul li a::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #F6F6F6;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: transform 150ms ease-in-out;
+}
+
+.main-nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+/* --------------------------- */
+
+.info-section {
+  display: flex;
+  flex-direction: row;
+  padding-top: 35px;
+  color: #9B9B9B;
+}
+
+.about-me,
+.testimonials {
+  width: 50%;
+}
+
+.about-me h1,
+.testimonials h1 {
+  font-size: 3.75rem; /* 60px */
+}
+
+.about-me p,
+.testimonials p {
+  padding: 50px 70px 10px 0;
 }
