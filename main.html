@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-global.css">
+    <link rel="stylesheet" href="styles-main.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Sam - Dev</title>
@@ -13,14 +14,34 @@
           <h1>Hi, I'm Sam.</h1>
           <h2>Long story short: I like doing stuff. Check it out <img src="icons/expand-more-white.svg" alt=""></h2>
         </header>
-        <nav class="nav main-nav">
-          <ul>
-            <li><a class="nav-item" href="#">Who am I?</a></li>
-            <li><a class="nav-item" href="#">Work</a></li>
-            <li><a class="nav-item" href="#">Travel</a></li>
-            <li><a class="nav-item" href="#">Artwork</a></li>
-            <li><a class="nav-item" href="#">Testimonials</a></li>
-            <li><a class="nav-item" href="#">Contact</a></li>
+        <nav class="nav-container">
+          <ul class="nav-list">
+            <li><a href="#">Who am I?</a></li>
+            <li>
+              <a href="#">Work</a>
+              <ul class="sub-nav work-sub-nav">
+                <li><a href="#">What are my skills?</a></li>
+                <li><a href="#">What experience do I have?</a></li>
+                <li><a href="#">What am I working on?</a></li>
+                <li><a href="#">Resume</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Travel</a>
+              <ul class="sub-nav travel-sub-nav">
+                <li><a href="#">Where have I been?</a></li>
+                <li><a href="#">Where will I go?</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Artwork</a>
+              <ul class="sub-nav art-sub-nav">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Inspirations</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -36,10 +57,10 @@
               Bachelor’s Degree in Management Information Systems, and found
               my career of choice in software/web development. I’ve worked
               in a .NET desktop software environment, and am looking to
-              expand my skills to web development (hence the website!).</p>
+              expand my skills to web development (hence the website!)</p>
           <p>&emsp;I’m also passionate about traveling the world and expressing
-              myself through art of various mediums. My artsy side has also
-              transferred to the web, which I hope to express through my
+              myself through art of various mediums. I'm hoping to transfer my
+              art skills to the web by showcasing them through my
               website design (what do you think? I have a lot to learn, but
               it’s a start)</p>
           <a href="#">Show Me More</a>

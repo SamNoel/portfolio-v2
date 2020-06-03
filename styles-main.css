@@ -1,0 +1,101 @@
+/* --------------------------INTRO SECTION STYLES-------------------------- */
+.intro-section {
+  padding: 150px 70px 150px 70px;
+}
+
+.intro-section {
+  color: #F6F6F6;
+  background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background-photo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.main-header h1 {
+  font-size: 5rem; /* 80px */
+}
+/* ------------------------------------------------------------------------ */
+
+/* --------------------------MAIN NAV STYLES-------------------------- */
+.nav-container {
+  padding-top: 50px;
+}
+
+.nav-container ul li {
+  padding: 20px 0;
+  /* for sub-nav */
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-container ul li > a {
+  width: 200px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* --------------------------BOTTOM BORDER EFFECT ON NAV-------------------------- */
+/* this will work on sub-nav items as well */
+.nav-container ul li > a::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #F6F6F6;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: transform 150ms ease-in-out;
+}
+
+.nav-container ul li:hover > a::after {
+  transform: scaleX(1);
+}
+/* ------------------------------------------------------------------------ */
+
+/* --------------------------SUB NAV STYLES-------------------------- */
+.nav-list li > ul {
+  /* position relative to parent to remove from main flow */
+  position: absolute;
+  left: 275px;
+  display: none;
+}
+
+.nav-list li ul li a {
+  width: auto;
+}
+
+.nav-list li:hover > ul {
+  display: block;
+}
+/* ------------------------------------------------------------------------ */
+
+/* --------------------------INFO SECTION STYLES-------------------------- */
+.info-section {
+  display: flex;
+  flex-direction: row;
+  padding: 70px;
+  color: #9B9B9B;
+}
+
+.about-me,
+.testimonials {
+  width: 50%;
+}
+
+/* center divider */
+.about-me {
+  border-right: 2px solid #9B9B9B;
+}
+
+.testimonials {
+  padding-left: 70px;
+}
+
+.about-me h1,
+.testimonials h1 {
+  font-size: 3.75rem; /* 60px */
+}
+
+.about-me p,
+.testimonials p {
+  padding: 50px 70px 10px 0;
+}
+/* ------------------------------------------------------------------------ */
