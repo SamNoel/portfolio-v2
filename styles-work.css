@@ -1,0 +1,31 @@
+.body-container {
+  padding: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* --------------------------HEADER STYLES-------------------------- */
+.body-container header {
+  height: 100px;
+  width: 200px;
+}
+
+.body-container header h1 {
+  position: fixed;
+  padding-right: 35px;
+  margin-right: 35px;
+  border-right: 2px solid #9B9B9B;
+}
+/* ------------------------------------------------------------------------ */
+
+/* --------------------------DETAILS SECTION STYLES-------------------------- */
+.details-container {
+  padding-top: 20px;
+  margin-left: 70px;
+  overflow: auto;
+}
+
+.details {
+  margin-bottom: 200px;
+}
+/* ------------------------------------------------------------------------ */
