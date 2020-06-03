@@ -8,7 +8,7 @@
   background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background-photo.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .main-header h1 {
@@ -36,7 +36,7 @@
 
 /* --------------------------BOTTOM BORDER EFFECT ON NAV-------------------------- */
 /* this will work on sub-nav items as well */
-.nav-container ul li > a::after {
+.nav-container > ul > li > a::after {
   display: block;
   content: "";
   border-bottom: 1px solid #F6F6F6;
@@ -55,7 +55,10 @@
   /* position relative to parent to remove from main flow */
   position: absolute;
   left: 275px;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 500ms linear;
+  transition-timing-function: ease-in;
 }
 
 .nav-list li ul li a {
@@ -63,7 +66,12 @@
 }
 
 .nav-list li:hover > ul {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-list li ul li a:hover {
+  color: #D3D3D3;
 }
 /* ------------------------------------------------------------------------ */
 
@@ -94,8 +102,66 @@
   font-size: 3.75rem; /* 60px */
 }
 
-.about-me p,
-.testimonials p {
+.about-me p {
   padding: 50px 70px 10px 0;
+}
+
+.testimonials p {
+  padding: 50px 0 10px 0;
+}
+
+#show-me-more {
+  display: block;
+  width: auto;
+  margin-top: 25px;
+}
+
+#show-me-more:hover {
+  color: #5B5B5B;
+}
+/* ------------------------------------------------------------------------ */
+
+
+
+/* --------------------------RESPONSIVE DESIGN-------------------------- */
+@media only screen and (max-width: 850px) {
+
+  .intro-section {
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background-photo-flipped.png");
+  }
+
+  /* --------------------------INFO SECTION STYLES-------------------------- */
+  .info-section {
+    flex-direction: column;
+    padding: 70px;
+    color: #9B9B9B;
+  }
+
+  .about-me,
+  .testimonials {
+    width: 100%;
+  }
+
+  .testimonials {
+    padding: 70px 0 0 0;
+  }
+
+  /* center divider */
+  .about-me {
+    padding-bottom: 70px;
+    border-right: none; /* remove right border from initial style */
+    border-bottom: 2px solid #9B9B9B;
+  }
+
+  .about-me h1,
+  .testimonials h1 {
+    font-size: 3.75rem; /* 60px */
+  }
+
+  .about-me p,
+  .testimonials p {
+    padding: 50px 0 10px 0;
+  }
+  /* ------------------------------------------------------------------------ */
 }
 /* ------------------------------------------------------------------------ */
