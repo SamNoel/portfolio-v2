@@ -11,7 +11,11 @@
 2.5rem - 40px
 3.75rem - 60px
 5rem - 80px
-  */
+
+Inline Styles:
+h1 for main intro page
+First letter of about me paragraph
+*/
 
 /* FONTS
 https://fonts.google.com/specimen/Barlow */
@@ -45,6 +49,7 @@ https://fonts.google.com/specimen/Barlow */
 
 body {
   font-family: "Barlow", sans-serif;
+  color: #9B9B9B;
 }
 
 html {
@@ -62,15 +67,27 @@ a {
   color: inherit;
 }
 
-nav ul {
+ul {
   list-style-type: none;
 }
 
+h1 {
+  font-size: 3.75rem; /* 60px */
+}
+
+.h1-large {
+  font-size: 5rem; /* 80px */
+}
+
 h2 {
+  font-size: 2.5rem; /* 40px */
+}
+
+h3 {
   font-size: 1.5rem; /* 24px */
 }
 
-p, li > a {
+p, li, li > a {
   font-size: 1.375rem; /* 22px */
 }
 /* ------------------------------------------------------------------------ */
