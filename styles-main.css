@@ -1,6 +1,6 @@
 /* --------------------------INTRO SECTION STYLES-------------------------- */
 .intro-section {
-  padding: 150px 70px 150px 70px;
+  padding: 100px 70px 150px 70px;
 }
 
 .intro-section {
@@ -9,10 +9,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-
-.main-header h1 {
-  font-size: 5rem; /* 80px */
 }
 /* ------------------------------------------------------------------------ */
 
@@ -37,6 +33,7 @@
 /* --------------------------BOTTOM BORDER EFFECT ON NAV-------------------------- */
 /* this will work on sub-nav items as well */
 .nav-container > ul > li > a::after {
+  padding-bottom: 10px;
   display: block;
   content: "";
   border-bottom: 1px solid #F6F6F6;
@@ -80,7 +77,6 @@
   display: flex;
   flex-direction: row;
   padding: 70px;
-  color: #9B9B9B;
 }
 
 .about-me,
@@ -134,7 +130,6 @@
   .info-section {
     flex-direction: column;
     padding: 70px;
-    color: #9B9B9B;
   }
 
   .about-me,
