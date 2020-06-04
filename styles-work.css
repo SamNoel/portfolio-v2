@@ -1,7 +1,19 @@
+body {
+  background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background-photo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* color: #F6F6F6; */
+}
+
 .body-container {
+  margin: 50px auto;
   padding: 70px;
   display: flex;
   flex-direction: row;
+  width: 75%;
+  background: rgba(255,255,255);
+  border-radius: 5px;
 }
 
 /* --------------------------HEADER STYLES-------------------------- */
@@ -11,6 +23,7 @@
 }
 
 .body-container header h1 {
+  /* slight hack to get h1 in fixed position without losing width on the header */
   position: fixed;
   padding-right: 35px;
   margin-right: 35px;
@@ -23,9 +36,28 @@
   padding-top: 20px;
   margin-left: 70px;
   overflow: auto;
+  width: 100%;
 }
 
 .details {
   margin-bottom: 200px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.experience-container p {
+  margin-left: 100px;
+}
+
+.experience-container h2 {
+  padding-top: 100px;
+}
+
+.experience-container h2:first-of-type {
+  padding-top: 0;
 }
 /* ------------------------------------------------------------------------ */
