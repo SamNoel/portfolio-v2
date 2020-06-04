@@ -9,19 +9,20 @@
   </head>
   <body>
     <div class="body-container">
-      <div class="intro-section">
+      <!-- ______________________INTRO SECTION______________________ -->
+      <div class="intro-container">
         <header class="main-header">
           <h1 class="h1-large">Hi, I'm Sam.</h1>
-          <h3>Long story short: I like doing stuff. Check it out <img src="icons/expand-more-white.svg" alt="background image"></h2>
+          <h3>Aspiring to do everything. Check it out <img src="icons/expand-more-white.svg" alt="background image"></h2>
         </header>
         <nav class="nav-container">
           <ul class="nav-list">
             <li><a href="#about-me-anchor">Who am I?</a></li>
             <li>
-              <a href="work.html">Work</a>
+              <a href="#work-anchor">Work</a>
               <ul class="sub-nav work-sub-nav">
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Experience</a></li>
+                <li><a href="#skills-anchor">Skills</a></li>
+                <li><a href="#experience-anchor">Experience</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Resume</a></li>
               </ul>
@@ -45,43 +46,120 @@
           </ul>
         </nav>
       </div>
-      <a id="about-me-anchor"></a>
-      <div class="info-section">
-        <div class="about-me">
-          <h1>Who am I?</h1>
-          <p><t>&emsp;<span style="font-size:2.5rem;">D</span>on’t worry, I’m not having an existential crisis here.
-            But here’s a little bit about me, summed up in 2 short paragraphs
-            so I can keep your attention (and maybe convince you to stay a
-            while).
-            <br>You can read in detail about these topics in the menu above</p>
-          <p>&emsp;I’m a 25 year old developer from Harrisburg, PA. I have a
-              Bachelor’s Degree in Management Information Systems, and found
-              my career of choice in software/web development. I’ve worked
-              in a .NET desktop software environment, and am looking to
-              expand my skills to web development (hence the website!)</p>
-          <p>&emsp;I’m also passionate about traveling the world and expressing
-              myself through art of various mediums. I'm hoping to transfer my
-              art skills to the web by showcasing them through my
-              website design (what do you think? I have a lot to learn, but
-              it’s a start)</p>
-          <a id="show-me-more" href="#">Show Me More</a>
-        </div>
-        <a id="testimonials-anchor"></a>
-        <div class="testimonials">
-          <h1>Testimonials</h1>
-          <p><em>&quot;He&#39;s the most talented boy I know&quot;</em>
-              <br>-Mom</p>
-          <p><em>&quot;Can he take a look at my printer? It&#39;s on the fritz&quot;</em>
-              <br>-Uncle Bob</p>
-          <p><em>&quot;Sam?...Hmm, don’t remember him&quot;</em>
-              <br>-College professor…(s)</p>
-          <p><em>&#42;Once featured in the well-known New Cumberland newspaper
-            publication for his 5th-grade art project&#42;</em></p>
-        </div>
-      </div>
-      <footer class="footer-section">
 
-      </footer>
+      <!-- ______________________INFO SECTION______________________ -->
+      <div class="info-container">
+        <a id="about-me-anchor"></a>
+        <div class="about-me-container">
+          <div class="about-me">
+            <h1>Who am I?</h1>
+            <p><t>&emsp;<span style="font-size:2.5rem;">D</span>on’t worry, I’m not having an existential crisis here.
+              But here’s a little bit about me, summed up in 2 short paragraphs
+              so I can keep your attention (and maybe convince you to stay a
+              while).
+              <br>You can read in detail about these topics in the menu above</p>
+            <p>&emsp;I’m a 25 year old developer from Harrisburg, PA. I have a
+                Bachelor’s Degree in Management Information Systems, and found
+                my career of choice in software/web development. I’ve worked
+                in a .NET desktop software environment, and am looking to
+                expand my skills to web development (hence the website!)</p>
+            <p>&emsp;I’m also passionate about traveling the world and expressing
+                myself through art of various mediums. I'm hoping to transfer my
+                art skills to the web by showcasing them through my
+                website design (what do you think? I have a lot to learn, but
+                it’s a start)</p>
+            <a href="#">Show Me More</a>
+          </div>
+          <a id="testimonials-anchor"></a>
+          <div class="testimonials">
+            <h1>Testimonials</h1>
+            <p><em>&quot;He&#39;s the most talented boy I know&quot;</em>
+                <br>-Mom</p>
+            <p><em>&quot;Can he take a look at my printer? It&#39;s on the fritz&quot;</em>
+                <br>-Uncle Bob</p>
+            <p><em>&quot;Sam?...Hmm, don’t remember him&quot;</em>
+                <br>-College professor…(s)</p>
+            <p><em>&#42;Once featured in the well-known New Cumberland newspaper
+              publication for his 5th-grade art project&#42;</em></p>
+          </div>
+        </div>
+
+        <!-- ______________________WORK SECTION______________________ -->
+        <div class="work-container">
+
+          <a id="work-anchor"></a>
+          <header class="sticky"> <!-- global style -->
+            <h1 class="h1-large">Work</h1>
+          </header>
+
+          <div class="work-info">
+            <!-- ______________________SKILLS______________________ -->
+            <a id="skills-anchor"></a>
+            <div class="skills">
+              <h1>Skills</h1>
+              <div class="skills-development">
+                <h2>Development</h2>
+                <ul>
+                  <li>C#</li>
+                  <li>XAML</li>
+                  <li>SQL</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>JQuery</li>
+                  <li>Angular</li>
+                  <li>Java unit testing with JUnit</li>
+                  <li>Web UI/UX</li>
+                </ul>
+              </div>
+              <div class="skills-language">
+                <h2>Language</h2>
+                <ul>
+                  <li>English (native)</li>
+                  <li>French (intermediate)</li>
+                </ul>
+                <p>&#94;More on that in my <a href="#">travels</a> section</p>
+              </div>
+            </div>
+
+            <!-- ______________________EXPERIENCE______________________ -->
+            <a id="experience-anchor"></a>
+            <div class="experience">
+              <h1>Experience</h1>
+              <div class="job-info">
+                <h2>September, 2018</h2>
+                <p><em>Computer Aid, Inc.</em></p>
+                <p>This was a contract job for Highmark Health Solutions, and my
+                  start in real-world dev experience via JUnit testing for Java code.</p>
+              </div>
+
+              <div class="job-info">
+                <h2>January, 2019</h2>
+                <p><em>PensionPro Software</em></p>
+                <p>This was my introduction to the .NET framework, and I developed a
+                  lot of my OOP skills here.</p>
+              </div>
+
+              <div class="job-info">
+                <h2>August, 2020</h2>
+                <p><em>Eagle Rocket, LLC</em></p>
+                <p>I’m currently doing dev projects here via upwork.com. You can
+                  view my profile here, and the Eagle Rocket profile here.</p>
+              </div>
+            </div>
+
+            <!-- ______________________PROJECTS______________________ -->
+            <a id="projects-anchor"></a>
+            <div class="projects">
+
+            </div>
+          </div>
+        </div>
+        <footer class="footer-section">
+
+        </footer>
+
+      </div>
     </div>
   </body>
 </html>

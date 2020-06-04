@@ -73,14 +73,20 @@ ul {
 
 h1 {
   font-size: 3.75rem; /* 60px */
+  font-weight: 300;
+  margin-bottom: 50px;
 }
 
 .h1-large {
   font-size: 5rem; /* 80px */
+  font-weight: 400;
+  margin: 0;
 }
 
 h2 {
   font-size: 2.5rem; /* 40px */
+  margin-bottom: 25px;
+  font-weight: 300;
 }
 
 h3 {
@@ -89,5 +95,12 @@ h3 {
 
 p, li, li > a {
   font-size: 1.375rem; /* 22px */
+}
+
+/* Custom styles */
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 /* ------------------------------------------------------------------------ */

@@ -1,9 +1,9 @@
 /* --------------------------INTRO SECTION STYLES-------------------------- */
-.intro-section {
+.intro-container {
   padding: 100px 70px 150px 70px;
 }
 
-.intro-section {
+.intro-container {
   color: #F6F6F6;
   background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background-photo.png");
   background-repeat: no-repeat;
@@ -73,10 +73,16 @@
 /* ------------------------------------------------------------------------ */
 
 /* --------------------------INFO SECTION STYLES-------------------------- */
-.info-section {
+.info-container {
+  padding: 70px;
+}
+
+/* --------------------------ABOUT ME STYLES-------------------------- */
+.about-me-container {
   display: flex;
   flex-direction: row;
-  padding: 70px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #9B9B9B;
 }
 
 .about-me,
@@ -99,11 +105,11 @@
 }
 
 .about-me p {
-  padding: 50px 70px 10px 0;
+  padding: 0 70px 50px 0;
 }
 
 .testimonials p {
-  padding: 50px 0 10px 0;
+  padding: 0 0 50px 0;
 }
 
 #show-me-more {
@@ -115,6 +121,35 @@
 #show-me-more:hover {
   color: #5B5B5B;
 }
+
+/* --------------------------WORK SECTION STYLES-------------------------- */
+.work-container {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.work-container header {
+  height: 100px;
+  width: 300px;
+}
+
+.work-container header h1 {
+  margin-top: 35px;
+  padding-right: 35px;
+  margin-right: 35px;
+  border-right: 2px solid #9B9B9B;
+}
+
+.work-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skills {
+  margin-top: 50px;
+}
 /* ------------------------------------------------------------------------ */
 
 
@@ -122,12 +157,12 @@
 /* --------------------------RESPONSIVE DESIGN-------------------------- */
 @media only screen and (max-width: 850px) {
 
-  .intro-section {
+  .intro-container {
     background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background-photo-flipped.png");
   }
 
   /* --------------------------INFO SECTION STYLES-------------------------- */
-  .info-section {
+  .about-me-container {
     flex-direction: column;
     padding: 70px;
   }
