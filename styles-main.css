@@ -182,12 +182,12 @@
 /* --------------------------CONTACT FORM STYLES-------------------------- */
 .contact-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
 }
 
 .contact-form-container {
-  padding: 70px;
+  padding: 0 70px;
   margin: 70px 0;
   display: flex;
   flex-direction: column;
@@ -199,44 +199,28 @@
   margin-top: 35px;
 }
 
-.form-row {
-  display: flex;
-  flex-direction: row;
+.contact-form button {
+  margin-top: 70px;
+  width: 100%;
+  font-size: inherit;
 }
 
-.form-row label,
-.form-row input,
-.form-row textarea {
-  font-size: 1.5rem;
+.form-row {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-row label {
-  margin-right: 35px;
-  width: 25%;
+  margin-bottom: 15px;
 }
 
 .form-row textarea {
   resize: none;
-  width: 100%;
-}
-
-.form-row input,
-.form-row textarea {
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 2px solid #9B9B9B;
-  padding: 10px;
-  vertical-align: middle;
-  color: #9B9B9B;
-  font-family: inherit;
+  height: 100px;
 }
 
 .form-row input:invalid {
   /* border-color: red; */
-}
-
-.message-row {
-
 }
 
 .contact-img-container {
@@ -247,7 +231,19 @@
   background-attachment: fixed;
   background-size: cover;
 }
+
+.quote-container {
+  padding: 70px;
+  width: 50%;
+}
 /* ------------------------------------------------------------------------ */
+
+/* --------------------------FOOTER DESIGN-------------------------- */
+.footer-container {
+  background-color: #9B9B9B;
+  color: white;
+  padding: 35px 0;
+}
 
 /* --------------------------RESPONSIVE DESIGN-------------------------- */
 @media only screen and (max-width: 850px) {
@@ -257,6 +253,10 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+  }
+
+  .contact-img-container {
+    height: 500px;
   }
 
   /* --------------------------INFO SECTION STYLES-------------------------- */
@@ -269,23 +269,15 @@
     flex-direction: column;
   }
 
-  /* .work-container header { */
-  .header-sticky {
-    background: white;
-    position: static;
-  }
-
-  /* .work-container header h1 { */
-  .h1-sticky {
-    border: none;
-  }
-
-  .about-me-container {
+  .about-me-container,
+  .contact-container {
     flex-direction: column;
   }
 
   .about-me,
-  .testimonials {
+  .testimonials,
+  .contact-form-container,
+  .quote-container {
     width: 100%;
   }
 
@@ -294,7 +286,8 @@
   }
 
   /* center divider */
-  .about-me {
+  .about-me,
+  .contact-form-container {
     padding-bottom: 70px;
     border-right: none; /* remove right border from initial style */
     border-bottom: 2px solid #9B9B9B;
@@ -314,28 +307,9 @@
 
 @media only screen and (max-width: 450px) {
 
-  .h1-large {
-    font-size: 3.75rem; /* 60px */
-  }
-
   .about-me h1,
-  .testimonials h1,
-  h1 {
+  .testimonials h1 {
     font-size: 2.5rem; /* 40px */
-  }
-
-  h2 {
-    font-size: 1.5rem; /* 24px */
-    margin-bottom: 25px;
-    font-weight: 300;
-  }
-
-  h3 {
-    font-size: 1.375rem; /* 22px */
-  }
-
-  p, li, li > a {
-    font-size: 1.25rem; /* 20px */
   }
 }
 /* ------------------------------------------------------------------------ */
