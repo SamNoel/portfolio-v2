@@ -23,7 +23,7 @@
               <ul class="sub-nav work-sub-nav">
                 <li><a href="#skills-anchor">Skills</a></li>
                 <li><a href="#experience-anchor">Experience</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#projects-anchor">Projects</a></li>
                 <li><a href="#">Resume</a></li>
               </ul>
             </li>
@@ -42,7 +42,7 @@
               </ul>
             </li>
             <li><a href="#testimonials-anchor">Testimonials</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact-me-anchor">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -50,10 +50,10 @@
       <!-- ______________________INFO SECTION______________________ -->
       <div class="info-container">
         <a id="about-me-anchor"></a>
-        <div class="about-me-container">
+        <div class="infos about-me-container">
           <div class="about-me">
             <h1>Who am I?</h1>
-            <p><t>&emsp;<span style="font-size:2.5rem;">D</span>on’t worry, I’m not having an existential crisis here.
+            <p><t>&emsp;<span class="big-letter">D</span>on’t worry, I’m not having an existential crisis here.
               But here’s a little bit about me, summed up in 2 short paragraphs
               so I can keep your attention (and maybe convince you to stay a
               while).
@@ -68,7 +68,7 @@
                 art skills to the web by showcasing them through my
                 website design (what do you think? I have a lot to learn, but
                 it’s a start)</p>
-            <a href="#">Show Me More</a>
+            <a class="link" href="#">Show Me More</a>
           </div>
           <a id="testimonials-anchor"></a>
           <div class="testimonials">
@@ -86,80 +86,133 @@
 
         <!-- ______________________WORK SECTION______________________ -->
         <div class="work-container">
-
           <a id="work-anchor"></a>
-          <header class="sticky"> <!-- global style -->
-            <h1 class="h1-large">Work</h1>
+          <header class="header-sticky"> <!-- global style -->
+            <h1 class="h1-large h1-sticky">Work</h1>
           </header>
 
+          <a id="skills-anchor"></a>
           <div class="work-info">
             <!-- ______________________SKILLS______________________ -->
             <a id="skills-anchor"></a>
-            <div class="skills">
+            <div class="infos skills">
               <h1>Skills</h1>
-              <div class="skills-development">
+              <div class="skills-info skills-development">
                 <h2>Development</h2>
                 <ul>
+                  <em>
                   <li>C#</li>
                   <li>XAML</li>
                   <li>SQL</li>
+                  <br>
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>Javascript</li>
                   <li>JQuery</li>
                   <li>Angular</li>
-                  <li>Java unit testing with JUnit</li>
                   <li>Web UI/UX</li>
+                  <br>
+                  <li>Java unit testing with JUnit</li>
+                  <br>
+                  <li>Scrum/agile development processes</li>
+                  <li>SDLC management</li>
+                  <li>GIT/GITHub</li>
+                  <li>Azure DevOps CMS</li>
+                  <li>Visual Studio IDE</li>
+                  </em>
                 </ul>
               </div>
-              <div class="skills-language">
-                <h2>Language</h2>
-                <ul>
-                  <li>English (native)</li>
-                  <li>French (intermediate)</li>
-                </ul>
-                <p>&#94;More on that in my <a href="#">travels</a> section</p>
+              <div class="skills-info skills-language">
+                <h2>Languages</h2>
+                <img class="icon" src="icons/flag-us.svg" alt="american flag">
+                <img class="icon" src="icons/flag-france.svg" alt="french flag">
+                <img class="icon" src="icons/flag-spain.svg" alt="spanish flag">
               </div>
             </div>
 
             <!-- ______________________EXPERIENCE______________________ -->
             <a id="experience-anchor"></a>
-            <div class="experience">
+            <div class="infos experience">
               <h1>Experience</h1>
               <div class="job-info">
                 <h2>September, 2018</h2>
-                <p><em>Computer Aid, Inc.</em></p>
+                <p><em><a class="link" href="https://cai.io" target="_blank">Computer Aid, Inc.</a></em></p>
+                <br>
                 <p>This was a contract job for Highmark Health Solutions, and my
                   start in real-world dev experience via JUnit testing for Java code.</p>
               </div>
 
               <div class="job-info">
                 <h2>January, 2019</h2>
-                <p><em>PensionPro Software</em></p>
+                <p><em><a class="link" href="https://pensionpro.com" target="_blank">PensionPro Software</a></em></p>
+                <br>
                 <p>This was my introduction to the .NET framework, and I developed a
-                  lot of my OOP skills here.</p>
+                  lot of my OOP skills here. I also managed patch releases and publishing.</p>
               </div>
 
               <div class="job-info">
                 <h2>August, 2020</h2>
-                <p><em>Eagle Rocket, LLC</em></p>
-                <p>I’m currently doing dev projects here via upwork.com. You can
-                  view my profile here, and the Eagle Rocket profile here.</p>
+                <p><em><a class="link" href="https://eaglerocket.net" target="_blank">Eagle Rocket, LLC</a></em></p>
+                <br>
+                <p>I’m currently doing dev projects here via <a class="link" href="https://upwork.com" target="_blank">upwork.com</a>. You can
+                  view my profile
+                  <a class="link" href="https://www.upwork.com/o/profiles/users/~0132c60516b82f1cf2/" target="_blank">here</a>,
+                  and the Eagle Rocket profile <a class="link" href="https://www.upwork.com/o/companies/~0152a14a851a78503e/" target="_blank">here</a>.</p>
               </div>
             </div>
 
             <!-- ______________________PROJECTS______________________ -->
             <a id="projects-anchor"></a>
-            <div class="projects">
-
+            <div class="infos projects">
+              <h1>Projects</h1>
+              <p><span class="big-letter">M</span>y biggest solo endeavour has been developing this site
+                (from scratch). It’s gone through several iterations, which
+                you can check out on my <a class="link">GitHub profile</a></p>
+                <br>
+              <p>I am also constantly working on development projects for
+                clients via UpWork. You can check out my work <a class="link">here</a>
+                (in case you missed it above)</p>
+              <br>
+              <br>
+              <p>Here are some solo projects I've done:</p>
+              <div class="projects-select">
+                <a class="link" href="#">-project container-</a>
+                <a class="link" href="#">-project container-</a>
+                <a class="link" href="#">-project container-</a>
+                <a class="link" href="#">-project container-</a>
+              </div>
             </div>
           </div>
         </div>
-        <footer class="footer-section">
-
-        </footer>
-
       </div>
+
+      <div class="contact-img-container"></div>
+      <div class="contact-container">
+
+
+        <a id="contact-me-anchor"></a>
+        <div class="contact-form-container">
+          <h1 >Contact</h1>
+          <form class="contact-form" action="index.html" method="post">
+            <div class="form-row">
+              <label for="full-name">Full Name</label>
+              <input id="full-name" type="text" name="full-name">
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" type="text" name="email">
+            </div>
+            <div class="form-row message-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <footer class="footer-container">
+
+      </footer>
     </div>
   </body>
 </html>

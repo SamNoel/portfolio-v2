@@ -1,8 +1,9 @@
 /* COLORS
 #F6F6F6 - Almost-white: intro font color
-#9B9B9B - Gray: info-section font color
+#9B9B9B - Gray: info-section font color (default font color)
 #5B5B5B - Dark-gray: hover font color info section
 #D3D3D3 - Light-gray: hover font color intro section
+#98A8FF - default link color
  */
 
  /* FONT SIZES
@@ -15,6 +16,13 @@
 Inline Styles:
 h1 for main intro page
 First letter of about me paragraph
+*/
+
+/* COMMON PIXEL SIZES
+35
+50
+70
+150
 */
 
 /* FONTS
@@ -64,7 +72,12 @@ html {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #98A8FF;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #5B5B5B;
 }
 
 ul {
@@ -75,12 +88,6 @@ h1 {
   font-size: 3.75rem; /* 60px */
   font-weight: 300;
   margin-bottom: 50px;
-}
-
-.h1-large {
-  font-size: 5rem; /* 80px */
-  font-weight: 400;
-  margin: 0;
 }
 
 h2 {
@@ -97,10 +104,43 @@ p, li, li > a {
   font-size: 1.375rem; /* 22px */
 }
 
-/* Custom styles */
-.sticky {
+label {
+  font-size: 2.5rem; /* 40px */
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+input,
+textarea {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Custom styled classes */
+.big-letter {
+  font-size:2.5rem;
+}
+
+.header-sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+}
+
+.h1-large {
+  font-size: 5rem; /* 80px */
+  font-weight: 400;
+  margin: 0;
+}
+
+.h1-sticky {
+  margin-top: 35px;
+  padding-right: 35px;
+  margin-right: 35px;
+  border-right: 2px solid #9B9B9B;
+}
+
+.icon {
+  height: 35px;
 }
 /* ------------------------------------------------------------------------ */
