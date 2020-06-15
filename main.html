@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- <script src="script.js"></script> -->
     <link rel="stylesheet" href="styles-global.css">
     <link rel="stylesheet" href="styles-main.css">
     <meta charset="utf-8">
@@ -9,6 +10,7 @@
   </head>
   <body>
     <div class="body-container">
+      <!-- <button class="button-dark-theme" type="button" name="button">Dark Theme</button> -->
       <!-- ______________________INTRO SECTION______________________ -->
       <div class="intro-container">
         <header class="main-header">
@@ -99,34 +101,66 @@
               <h1>Skills</h1>
               <div class="skills-info skills-development">
                 <h2>Development</h2>
-                <ul>
-                  <em>
-                  <li>C#</li>
-                  <li>XAML</li>
-                  <li>SQL</li>
-                  <br>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
-                  <li>JQuery</li>
-                  <li>Angular</li>
-                  <li>Web UI/UX</li>
-                  <br>
-                  <li>Java unit testing with JUnit</li>
-                  <br>
-                  <li>Scrum/agile development processes</li>
-                  <li>SDLC management</li>
-                  <li>GIT/GITHub</li>
-                  <li>Azure DevOps CMS</li>
-                  <li>Visual Studio IDE</li>
-                  </em>
-                </ul>
+                <div class="dev-skills">
+                  <div class="dev-skills-level">
+                    <h3>Strong</h3>
+                    <ul>
+                      <em>
+                      <li>C#</li>
+                      <li>XAML</li>
+                      <li>SQL</li>
+                      </em>
+                    </ul>
+                  </div>
+
+                  <div class="dev-skills-level">
+                    <h3>Moderate</h3>
+                    <ul>
+                      <em>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Javascript</li>
+                      <li>JQuery</li>
+                      <li>Angular</li>
+                      <li>Web UI/UX</li>
+                      </em>
+                    </ul>
+                  </div>
+
+                  <div class="dev-skills-level">
+                    <h3>Basic</h3>
+                    <ul>
+                      <em>
+                      <li>Java unit testing with JUnit</li>
+                      <li>Scrum/agile development processes</li>
+                      <li>SDLC management</li>
+                      <li>GIT/GITHub</li>
+                      <li>Azure DevOps CMS</li>
+                      <li>Visual Studio IDE</li>
+                      </em>
+                    </ul>
+                  </div>
+                </div>
+
               </div>
               <div class="skills-info skills-language">
                 <h2>Languages</h2>
-                <img class="icon" src="icons/flag-us.svg" alt="american flag">
-                <img class="icon" src="icons/flag-france.svg" alt="french flag">
-                <img class="icon" src="icons/flag-spain.svg" alt="spanish flag">
+                <div class="lang-skills">
+                  <div class="lang-skills-level">
+                    <h3>Fluent/Native</h3>
+                    <img class="icon" src="icons/flag-us.svg" alt="american flag">
+                  </div>
+
+                  <div class="lang-skills-level">
+                    <h3>Conversational</h3>
+                    <img class="icon" src="icons/flag-france.svg" alt="french flag">
+                  </div>
+
+                  <div class="lang-skills-level">
+                    <h3>Basic</h3>
+                    <img class="icon" src="icons/flag-spain.svg" alt="spanish flag">
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -230,8 +264,12 @@
       </div>
 
       <footer class="footer-container">
-        <h3>footer</h3>
+        <p>Copyright Sam Noel @ <span id="year"></span> All Rights Reserved.</p>
       </footer>
     </div>
   </body>
+
+  <script type="text/javascript" src="script.js">
+
+  </script>
 </html>
